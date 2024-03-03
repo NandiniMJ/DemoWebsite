@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+main
+    {
+        height: 640px;
+        width: 100%;
+        background-color: lightcyan;
+        /* display: flex; */
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav{
+        background-color:purple;
+                height: 12%;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        font-size: x-large;
+    }
+    li:hover{
+        scale: 1.1;
+    }
+    .mainimg{
+        height: 60px;
+        width: 90px;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: darkmagenta 8px;
+        
+    }
+    .mainSection{
+        display: flex;
+        justify-content: space-around;
+    }
+.one
+    {
+     background-color: transparent;
+     height: 70%;
+     width: 20%;
+     border-top-right-radius: 10%;
+    }
+.one:hover{
+    scale: 1.2;
+} 
+:hover.one>.first{
+    color:black;
+    scale:1;
+}
+.first{
+    text-align: center;
+    color: transparent;
+    transition:3s;
+} 
+.first:hover{
+    color: black;
+    
+}
+.imge{
+    height: 20%;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border-top-right-radius: 10%;
+    border-top-left-radius: 10%; */
+}
+img{
+    /* border-top-right-radius: 20%; */
+    /* border-top-left-radius: 15%; */
+    /* border-bottom-left-radius: 20%; */
+    /* border-bottom-right-radius: 15%; */
+}
+
+.text{
+    text-align: center;
+    color: darkred;
+    font-size: 20px;
+    }
+.text:hover{
+    color: blue;
+
+    /* color: transparent; */
+}
+.two
+    {
+        background-color: transparent;
+        height: 70%;
+        width:20% ;
+        border-top-left-radius: 10%;
+    }
+.two:hover{
+    scale:1.2;
+}
+:hover.two>.first{
+    color:black;
+    scale:1;
+}
+.three
+    {
+        background-color: transparent; 
+        height: 70%;
+        width: 20%;
+        border-bottom-left-radius: 10px;
+    }
+.three:hover{
+    scale: 1.2;
+}
+:hover.three>.first{
+    color:black;
+    scale:1;
+}
+.four
+    {
+        background-color:transparent;
+        height: 70%;
+        width: 20%;
+        border-bottom-right-radius: 10px;
+    }
+.four:hover{
+    scale: 1.2;
+}
+:hover.four>.first{
+    color:black;
+    scale:1;
+}

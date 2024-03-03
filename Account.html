@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        main{
+            /* background-color: wheat; */
+            background:url(./login3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+        nav{
+            background-color:purple;
+                        height: 15%;
+            width: 100%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+            font-size: x-large;
+        }
+        .mainimg{
+            height: 60px;
+            border-radius: 50%;
+            
+        }
+        form{
+            margin-left: 30%;
+            margin-top: 3%;
+        }
+        form h1{
+            margin-left: 10%;
+        }
+        input{
+            float: right;
+            margin-right:60%;
+        }
+        textarea{
+            float: right;
+            margin-right:60%;
+        }
+        button{
+            /* text-align: center; */
+            margin-left: 10%;
+        }
+        .anchor{
+            color: white;
+            margin-left: 5%;
+            text-decoration:underline;
+        }
+        li:hover{
+            scale:1.1;
+        }
+        label{
+            color: aliceblue;
+            font-size: 20px;
+        }
+        h1{
+            color: lightcoral;
+            font-size: 35px;
+        }
+</style>
+</head>
+<body>
+    <main>
+        <nav>
+            <img class="mainimg" src="./logo11.jpg"alt="">
+            <li><b><a href="./Home.html">Home</a></b></li>
+            <li><b><a href="./Categories.html">Categories</a></b></li>
+            <li><b><a href="./types.html">Types</a></b></li>
+            <li><b><a href="./Offers.html">Offers</a></b></li>
+            <li><b><a href="./aboutUs.html">About US</a></b></li>
+            <li><b><a href="./Account.html">Account</a></b></li>
+            <li><b><a href="./wishlist.html">Wish List</a></b></li>
+        </nav>
+        <form action="">
+            <div class="aOne">
+                <h1>Signup Page</h1><br><br>
+                <label>First Name :</label>
+                <input type="text" required><br><br>
+                <label>Middle Name :</label>
+                <input type="text" required><br><br>
+                <label>Last Name :</label>
+                <input type="text" required><br><br>
+                <label>Date of Birth :</label>
+                <input type="date" required><br><br>    
+                <label>Mobile Number :</label>
+                <input type="text" required><br><br>
+                <label>Email :</label>
+                <input type="text" required><br><br>
+                <label>Address :</label>
+                <textarea></textarea><br><br><br><br>
+                <button>Create Account</button><br><br>
+                <a class= "anchor" href="./Login.html">Click here to login</a>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>

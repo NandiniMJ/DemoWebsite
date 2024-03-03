@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wishList</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .fresh{
+        background-color: lightcyan;
+        height: 100vh;
+        width: 100%;
+    }
+    nav{
+        background-color:purple;
+        height: 12%;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        font-size: x-large;
+    }
+    .mainimg{
+        height: 60px;
+            width: 90px;
+            border-radius: 50%;
+            border-style: solid;
+            border-color: darkmagenta 8px;
+        
+    }
+    .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            height: 30%;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: darkmagenta;
+        }
+
+        .cream1{
+            height: 222px;
+            width: 100%;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: purple;
+        }
+        .cream8{
+            height: 222px;
+            width: 100%;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: purple;
+        }
+        .cream7{
+            height: 222px;
+            width: 100%;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: purple; 
+        }
+        .cream4{
+            height:222px;
+            width: 100%;
+            border-radius: 5px; 
+            border-style: solid;
+            border-color: purple;
+        }
+        .product h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #666;
+        }
+        button{
+            height: 30px;
+            margin-left: 30%;
+            color: green;
+            border-color: rgb(60, 0, 128);
+            /* padding: 10px; */
+            cursor: pointer;
+            text-align: center;
+            margin-left: 20px;
+        }
+        .buy1{
+           
+            height: 30px;
+            width: 90px;
+            color: white;
+            border-color: rgb(128, 0, 32);
+            cursor: pointer;
+            margin-left: 75px;
+            background-color: rgb(63, 4, 23);
+        }
+        .fresh2{
+        background-color: lightcyan;
+        height: 100vh;
+        width: 100%;
+        margin-top: -2%;
+    }
+    .product_Container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product1 {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            height: 30%;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: purple;
+        }
+        .product1 h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .product1 p {
+            color: #666;
+        }
+        .cream2{
+            height: 222px;
+            width: 80%;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: rgb(175, 7, 63);
+        }
+        .cream3{
+            height: 222px;
+            width: 80%;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: rgb(175, 7, 63);
+        }
+        .cream5{
+            height: 222px;
+            width: 80%;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: rgb(175, 7, 63);
+        }
+        .cream6{
+            height: 222px;
+            width: 80%;
+            border-radius: 5px;
+            border-style: solid;
+            border-color: rgb(175, 7, 63);
+        }
+        .cart1 img{
+    position: absolute;
+    top: +20px;
+    right: +40px;
+    background-color:white;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 12px;
+    margin-bottom: 20px;
+ }
+ .starOne{
+    color: rgb(104, 7, 80);
+    margin-bottom: 20px;
+    margin-left: 70px;
+ }
+ .footer{
+            background-color: black;
+            height: 80vh;
+            width: 100%;
+            margin-top: -7%;
+        }
+        .last{
+            display: flex;
+            justify-content: space-around;
+    }
+    .leftOne{
+        /* background-color: gray; */
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        margin-top: 1%;
+        color: white;
+        font-size: 15px;
+
+    }
+    .leftTwo{
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        margin-top: 1%;
+        color: white;
+        font-size: 15px;
+
+    }
+    .leftThree{
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        margin-top: 1%;
+        color: white;
+        font-size: 15px;
+
+    }
+    .leftFour{
+        height: 100px;
+        width: 200px;
+        text-align: center;
+        margin-top: 1%;
+        color: white;
+        font-size: 15px;
+    }
+    li:hover{
+        scale: 1.1;
+    }
+</style>
+</head>
+<body>
+    <main class="fresh">
+        <nav>
+            <img class="mainimg" src="./logo11.jpg"alt="">
+            <li><b><a href="./Home.html">Home</a></b></li>
+            <li><b><a href="./Shop Categories.html">Categories</a></b></li>
+            <li><b><a href="./types.html">Types</a></b></li>
+            <li><b><a href="./Offers.html">Offers</a></b></li>
+            <li><b><a href="./aboutUs.html">About US</a></b></li>
+            <li><b><a href="./Account.html">Account</a></b></li>
+            <li><b><a href="./wishlist.html">Wish List</a></b></li>
+        </nav> 
+        <div class="product-container">
+            <div class="product">
+                <img class="cream1" src="./nmj1.jpg" alt="Product 1"><br><br>
+                <h2>New Born Baby shoot</h2><br>
+                <p>5000 DSLR Pics</p><br>
+                <h4>Rs.30000</h2><br>
+                    <div class="starOne"><i class='bx bxs-star-half' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                <!-- <button>Wish List</button> -->
+                <input type="button" value="Book Now" class="buy1">
+
+            </div>
+    
+            <div class="product">
+                <img class="cream8" src="./nmj2.jpg" alt="Product 1"><br><br>
+                <h2>Village THEME</h2><br>
+                <p>3000 DSLR Pics</p><br>
+                <h4>Rs.15000</h2><br>
+                    <div class="starOne"><i class='bx bxs-star-half' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                <!-- <button>Wish List</button> -->
+                <input type="button" value="Book Now" class="buy1">
+
+            </div>
+            <div class="product">
+                <img class="cream7" src="./nmj3.JPG" alt="Product 1"><br><br>
+                <h2>TWINS Photo shoot</h2><br>
+                <p>4000 DSLR Pics</p><br>
+                <h4>Rs.45000</h2><br>
+        <div class="starOne"><i class='bx bxs-star-half' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+        </div>
+                <!-- <button>Wish List</button> -->
+                <input type="button" value="Book Now" class="buy1">
+
+            </div>
+            <div class="product">
+                <img class="cream4" src="./babyCoverpage.jpg" alt="Product 1"><br><br>
+                <h2>MAKE UP THEME </h2><br>
+                <p>6000 DSLR Pics</p><br>
+                <h4>Rs.10000</h2><br>
+                    <div class="starOne"><i class='bx bxs-star-half' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                <!-- <button>Wish List</button> -->
+                <input type="button" value="Book Now" class="buy1">
+
+            </div>
+        </main>
+        <main class="fresh2">
+            <div class="product_Container">
+            <div class="product1">
+                <img class="cream2" src="./nmj6.JPG" alt="Product 1"><br><br>
+                <h2>Kitchen Theme</h2><br>
+                <p>3000 DSLR Pics</p><br>
+                <h4>Rs.39000</h2><br>
+                    <div class="starOne"><i class='bx bxs-star-half' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                <!-- <button>Wish List</button> -->
+                <input type="button" value="Book Now" class="buy1">
+
+            </div>
+            <div class="product1">
+                <img class="cream5" src="./nmj8.jpg" alt="Product 1"><br><br>
+                <h2>COPS THEME</h2><br>
+                <p>15000 DSLR Pics</p><br>
+                <h4>Rs.136000</h2><br>
+                    <div class="starOne"><i class='bx bxs-star-half' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                <!-- <button>Wish List</button> -->
+                <input type="button" value="Book Now" class="buy1">
+
+            </div>
+            <div class="product1">
+                <img class="cream6" src="./nmj9.jpg" alt="Product 1"><br><br>
+                <h2>Lord Krishna THEME</h2><br>
+                <p>5000 DSLR Pics</p><br>
+                <h4>Rs.51000</h2><br>
+                    <div class="starOne"><i class='bx bxs-star-half' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                <!-- <button>Wish List</button> -->
+                <input type="button" value="Book Now" class="buy1">
+
+            </div>
+            <div class="product1">
+                <img class="cream3" src="./nmj10.jpg" alt="Product 1"><br><br>
+                <h2>Teacher THEME</h2><br>
+                <p>8000 DSLR Pics</p><br>
+                <h4>Rs.78000</h2><br>
+                    <div class="starOne"><i class='bx bxs-star-half' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                        <i class='bx bxs-star' ></i>
+                    </div>
+                <!-- <button>Wish List</button> -->
+                <input type="button" value="Book Now" class="buy1">
+
+            </div>
+        </div>
+        <script src="product.js"></script>
+        </main>
+        <main class="footer">
+            <section class="last">
+                <div class="leftOne">
+                   <br><br> <h1>LINKS</h1><br>
+                    <h4>Affiliate</h4><br>
+                    <h4>For teams</h4><br>
+                    <h4>Leadership</h4><br>
+                    <h4>MRPL Values</h4><br>
+                    <h4>Ethics & Policies</h4><br>
+                    <h4>Quality 1st Framework</h4><br>
+                    <h4>Sustainability and CSR Initiatives</h4><br>
+                    <h4>Awards and Accolades</h4>
+                </div>
+                <div class="leftTwo">
+                    <article class="twoo">
+                       <br><br> <h1>PHOTOSHOOT BUSINESS</h1><br>
+                        <h4>Legal</h4><br>
+                        <h4>Pricing</h4>
+                    </article><br>
+                    <article class="twooo">
+                        <h1>SHOOTS</h1><br>
+                        <h4>Scting hadshot</h4><br>
+                        <h4>Corporate headshoot</h4><br>
+                        <h4>Executive headshoot</h4><br>
+                        <h4>Model headshoot</h4><br>
+                        <h4>Our Brands</h4>
+                    </article>
+                </div>
+                <div class="leftThree">
+                   <br><br><h1>Careers</h1><br>
+                    <h4>Life at PHOTOSHOOT</h4><br>
+                    <h4>Designing</h4><br>
+                    <h4>Current Openings</h4> 
+                </div>
+                <div class="leftFour">
+                    <br><br><h1>Get in touch</h1><br>
+                    <h4>STUDIO Locator</h4><br><br>
+                    <h4>Family</h4><br>
+                    <h4> studio Wallet Policies</h4><br>
+                    <h4>Privacy Policy</h4><br>
+                    <h4>Disclaimer</h4><br>
+                    <h4>Terms & Conditions</h4><br>
+                    <h4>FAQ</h4>
+                </div>
+            </section>
+    
+         </main>
+</body>
+</html>

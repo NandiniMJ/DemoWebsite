@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Fresh</title>
+    <style>
+    *{
+        margin: 0%;
+        padding: 0%;
+    }
+    .fresh{
+        background-color: wheat;
+        height: 100vh;
+        width: 100%;
+    }
+    nav{
+        background-color:rgb(250, 100, 45);
+        height: 15%;
+        width: 100%;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    a{
+        text-decoration: none;
+        color:white;
+        font-size: x-large;
+    }
+    .mainimg{
+        height: 60px;
+        border-radius: 50%;
+        
+    }
+    .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            height: 30%;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        .potato{
+            height: 30%;
+            width: 80%;
+            border-radius: 5px;
+        }
+        .onion{
+            height: 40%;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .tomato{
+            height: 190px;
+            width: 100%;
+            border-radius: 5px; 
+        }
+        .product h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #666;
+        }
+        button{
+            height: 30px;
+            margin-left: 30%;
+            color: green;
+            border-color: green;
+            /* padding: 10px; */
+            cursor: pointer;
+            text-align: center;
+        }
+        .fresh2{
+        background-color: wheat;
+        height: 100vh;
+        width: 100%;
+        margin-top: -2%;
+    }
+    .product_Container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .product1 {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            height: 30%;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .product1 h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .product1 p {
+            color: #666;
+        }
+        .Watermelon{
+            height: 200px;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .grapes{
+            height: 205px;
+            width: 100%;
+            border-radius: 5px;
+        }
+
+</style>
+</head>
+<body>
+    <main class="fresh">
+        <nav>
+            <img class="mainimg" src="./purpleLogo.png"alt="">
+            <li><b><a href="./Home.html">Home</a></b></li>
+            <li><b><a href="./Shop Categories.html">Categories</a></b></li>
+
+            <li><b><a href="./Brands.html">Brands</a></b></li>
+            <li><b><a href="./Offers">Offers</a></b></li>
+            <li><b><a href="./About US.html">About US</a></b></li>
+            <li><b><a href="./Account.html">Account</a></b></li>
+            <li><b><a href="">Cart</a></b></li>
+        </nav>  
+        <div class="product-container">
+            <div class="product">
+                <img class="potato" src="./potato.jpeg" alt="Product 1"><br><br>
+                <h2>Potato(Allugadde)</h2><br>
+                <p>1KG</p><br>
+                <h4>Rs.42</h2><br>
+                <button>Add to Cart</button>
+            </div>
+    
+            <div class="product">
+                <img class="onion" src="./Onion.jpeg" alt="Product 1"><br><br>
+                <h2>Onion</h2><br>
+                <p>1KG</p><br>
+                <h4>Rs.36</h2><br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="tomato" src="./Tomato.jpeg" alt="Product 1"><br><br>
+                <h2>Tomato</h2><br>
+                <p>500g</p><br>
+                <h4>Rs.16</h2><br>
+                <button>Add to Cart</button>
+            </div>
+        </main>
+        <main class="fresh2">
+            <div class="product_Container">
+            <div class="product1">
+                <img class="Orange" src="./Oranges.jpeg" alt="Product 1"><br><br>
+                <h2>Orange</h2><br>
+                <p>500g</p><br>
+                <h4>Rs.39</h2><br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product1">
+                <img class="Watermelon" src="./Watermelon.jpeg" alt="Product 1"><br><br>
+                <h2>Watermelon</h2><br>
+                <p>1 piece(2kg-3kg)</p><br>
+                <h4>Rs.136</h2><br>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product1">
+                <img class="grapes" src="./Grapees.jpeg" alt="Product 1"><br><br>
+                <h2>Grapes</h2><br>
+                <p>500g</p><br>
+                <h4>Rs.51</h2><br>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        </main>
+</body>
+</html>

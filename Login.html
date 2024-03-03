@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        main{
+            /* background-color: wheat; */
+            background-image: url(./login2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 100vh;
+            width: 100%;
+        }
+        nav{
+            background-color:purple;
+                        height: 15%;
+            width: 100%;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        li:hover{
+            scale: 1.1;
+        }
+        :hover.nav>.li{
+            color: black;
+        }
+        a{
+            text-decoration: none;
+            color:white;
+            font-size: x-large;
+        }
+        .mainimg{
+            height: 90px;
+            border-radius: 50%;
+            
+        }
+        form{
+            /* background-color: peru; */
+            height: 400px;
+            width: 400px;
+            margin-left: 400px;
+            position: relative;
+            top:50px;
+            text-align: center;
+        }
+        .logIn{
+                background-color: orangered ;
+                height: 30px;
+                width: 30%;
+                text-align: center;
+                border-style: none;
+                cursor: pointer;
+        }
+        .fP{
+            text-decoration: underline;
+            color: blue;
+        }
+        .account{
+            color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <nav>
+            <img class="mainimg" src="./logo11.jpg"alt="">
+            <li><b><a href="./Home.html">Home</a></b></li>
+            <li><b><a href="./Shop Categories.html">Categories</a></b></li>
+            <li><b><a href="./types.html">Types</a></b></li>
+            <li><b><a href="./Offers.html">Offers</a></b></li>
+            <li><b><a href="./aboutUs.html">About US</a></b></li>
+            <li><b><a href="./Account.html">Account</a></b></li>
+            <li><b><a href="./wishlist.html">Wish List</a></b></li>
+        </nav>
+        <form>
+            <div class="fTwo">
+                <h1>Login Page</h1><br><br><br>
+                <label>Email ID :</label>
+                <input type="text" required><br><br>
+                <label>Password :</label>
+                <input type="text" required><br><br><br>
+                <a class="fP" href="">Forgot Password?</a><br><br><br>
+                <button class="logIn">Login</button><br><br><br>
+                <a class="account" href="./Account.html">Signup</a>
+            </div>
+        </form>
+    </main>
+ 
+</body>
+</html>
